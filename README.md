@@ -3,19 +3,22 @@ This is a source code developed by Naums Mogers for an open assessment in the mo
 It is a Ptolemy II Java simulation of a multiprocessor platform with 16 homogeneous processing elements (PEs) interconnected by a wormhole Network-on-Chip (NoC) in a 4x4 mesh topology. 
 
 Source code documentation
--------------------------------
-StandaloneVCProducerCBwithPriorityNonpreemptiveScheduler class:
+/* ------------------------------- */
+StandaloneVCProducerCBwithPriorityNonpreemptiveScheduler class
+------------------------------------------------------------
 Based on the same class from the cycle-accurate model, this class is responsible for receiving
 new tasks from Subscribers, simulating their computation and sending a message on the
 completion of execution. The time it took to complete the computation is added to the message
 in (this, fire, 123-127).
 
-StandaloneVCConsumerCBwithPriority class:
+StandaloneVCConsumerCBwithPriority class
+-----------------------------------------
 Based on the same class from the cycle-accurate model, this class is responsible for receiving
 messages, updating them with the time at which they arrive (this, fire, 67-71) and passing the
 message forward to Publishers. 
 
-interConnect class:
+interConnect class
+------------------
 This actor implements the interconnection between all producers and consumers. It maintains
 the list of messages in transmission, where each message is of class PListElement defined in
 PListElement.java. On fire() event (interConnect, fire, 123) the actor first processeses all the new
@@ -51,4 +54,5 @@ was implemented (interConnect, noLoadLatency, 371), which also takes advantage o
 precision introduced by the lastHop field of the packet.
 
 Reporter and statistician classes:
+----------------------------------
 These classes are used to evaluate packet latencies.
