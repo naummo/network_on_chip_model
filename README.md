@@ -13,7 +13,7 @@ in (this, fire, 123-127).
 StandaloneVCConsumerCBwithPriority class:
 Based on the same class from the cycle-accurate model, this class is responsible for receiving
 messages, updating them with the time at which they arrive (this, fire, 67-71) and passing the
-message forward to Publishers.
+message forward to Publishers. 
 
 interConnect class:
 This actor implements the interconnection between all producers and consumers. It maintains
