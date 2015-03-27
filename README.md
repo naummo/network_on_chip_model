@@ -3,7 +3,7 @@ This is a source code developed by Naums Mogers for an open assessment in the mo
 It is a Ptolemy II Java simulation of a multiprocessor platform with 16 homogeneous processing elements (PEs) interconnected by a wormhole Network-on-Chip (NoC) in a 4x4 mesh topology. 
 
 Source code documentation
-/* ------------------------------- */
+-------------------------------
 StandaloneVCProducerCBwithPriorityNonpreemptiveScheduler class
 ------------------------------------------------------------
 Based on the same class from the cycle-accurate model, this class is responsible for receiving
